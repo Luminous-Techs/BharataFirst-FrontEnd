@@ -1,1 +1,10 @@
 /* Your custom css code goes here */
+
+.about-cover-photo {
+    width: 100%;
+    aspect-ratio: 16 / 4;
+}
+
+.money {
+    font-weight: 400;
+}
