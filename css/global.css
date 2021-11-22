@@ -1,0 +1,11 @@
+.working * {
+    border: 1px dashed #f00;
+}
+
+.probootstrap-footer {
+    padding-top: 1em;
+}
+
+.probootstrap-footer .probootstrap-copyright {
+    padding: 1em 0;
+}

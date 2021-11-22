@@ -1,0 +1,60 @@
+/* Your custom css code goes here */
+
+/* Intro (Hero) */
+
+.probootstrap-hero {
+    display: grid;
+    place-items: center;
+    height: 100vh !important;
+    padding-top: 88px;
+    background-color: #6c6c6c;
+    background: linear-gradient(#4c4c4c, #6c6c6c);
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.probootstrap-hero .container {
+    height: 80vh;
+}
+
+.probootstrap-hero .probootstrap-slider-text {
+    padding-top: unset;
+}
+
+.youtube-iframe {
+    width: 600px;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-cover-photo {
+    width: 100%;
+    aspect-ratio: 16 / 4;
+}
+
+.money {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-flex {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .youtube-iframe {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .youtube-iframe {
+        min-width: 300px;
+        width: 70vw;
+    }
+}
