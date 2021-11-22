@@ -1,0 +1,43 @@
+.scheme-amount-container {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 125px);
+    margin-top: 10px;
+}
+
+.radio-input {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.radio-label {
+    width: 125px;
+    text-align: center;
+    color: #01C632;
+    cursor: pointer;
+    padding: 3px 12px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin: unset;
+    user-select: none;
+}
+
+.radio-input:checked + .radio-label {
+    background-color: #01C632;
+    color: #FFF;
+}
+
+.radio-label:hover, .radio-input:hover + .radio-label,
+.radio-input:focus + .radio-label  {
+    box-shadow: 0 0 1px 2px #01C63230;
+}
+
+@media screen and (max-width: 426px) {
+    .scheme-amount-container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 125px);
+    }
+}
