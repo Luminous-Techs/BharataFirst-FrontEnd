@@ -1,3 +1,16 @@
+.probootstrap-hero {
+    display: grid;
+    place-items: center;
+    height: 80vh !important;
+    padding-top: 88px;
+    background-color: #6c6c6c;
+    background: linear-gradient(#4c4c4c, #6c6c6c);
+}
+
+.probootstrap-hero .probootstrap-slider-text {
+    padding-top: unset;
+}
+
 .scheme-amount-container {
     display: grid;
     align-items: center;
@@ -5,6 +18,17 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 125px);
     margin-top: 10px;
+}
+
+.perk-msg {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #CCC;
+    border-radius: 4px;
 }
 
 .radio-input {
@@ -35,9 +59,24 @@
     box-shadow: 0 0 1px 2px #01C63230;
 }
 
+.refund-policy-label {
+    display: inline;
+    margin-left: 5px;
+}
+
+.razorpay-btn, .bank-transfer-btn {
+    width: 350px;
+}
+
 @media screen and (max-width: 426px) {
     .scheme-amount-container {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 125px);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .razorpay-btn, .bank-transfer-btn {
+        width: 100%;
     }
 }
