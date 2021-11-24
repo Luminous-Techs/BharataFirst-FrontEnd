@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bharata First</title>
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="img/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="img/favicon-180x180.png">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
@@ -79,7 +82,7 @@
         <div class="container">
           <div class="row">
           <div class="col-md-5 probootstrap-animate">
-            <form action="#" method="post" class="probootstrap-form">
+            <form action="/" method="post" class="probootstrap-form">
               <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="eg. John Doe" required>
@@ -104,7 +107,7 @@
               </div> -->
               <div class="form-group">
                 <label for="amount">Amount</label>
-                <input type="number" class="form-control" id="amount" name="amount" placeholder="&#8377; 1000.00">
+                <input type="number" class="form-control" id="amount" name="amount" placeholder="&#8377; 1000.00" onfocus="myVal()" onchange="myPerks()">
                 <div class="scheme-amount-container">
                   <div>
                     <input class="radio-input" type="radio" name="scheme-amount" value="10000" id="scheme-amount1">
@@ -132,7 +135,7 @@
                   </div>
                 </div>
                 <div class="perk-msg">
-                  <p style="margin: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, placeat.</p>
+                  <p id="perks" style="margin: 0;">Your Perks will appear here</p>
                 </div>
               </div>
               <div class="form-group">
@@ -141,17 +144,14 @@
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea cols="30" rows="8" class="form-control" id="message" name="message" placeholder="eg. This donation is for the children who needs food."></textarea>
+                <textarea cols="30" rows="6" class="form-control" id="message" name="message" placeholder="eg. This donation is for the children who needs food."></textarea>
               </div>
               <div class="form-group">
                 <input class="refund-policy-checkbox" type="checkbox" name="refund-policy" id="refund-policy-check">
                 <label class="refund-policy-label" for="refund-policy-check">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, culpa?</label>
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-lg razorpay-btn" id="submit" name="submit" value="Donate Using Razorpay">
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-lg bank-transfer-btn" id="submit" name="submit" value="Direct Bank Transfer">
+                <input type="submit" class="btn btn-primary btn-lg razorpay-btn" id="submit" name="submit" value="Make Payment" onclick="location.href='/BharataFirst-FrontEnd/confirm.html'">
               </div>
             </form>
           </div>
@@ -234,7 +234,7 @@
 
         <div class="m-copyright">
           <!-- <div class="text-left"> -->
-            <p style="margin: 0">&copy; 2021 <a href="index.html">Bharata First</a>. &nbsp;All Rights Reserved.</p>
+            <p style="margin: 0">&copy; 2021 <a href="/">Bharata First</a>. &nbsp;All Rights Reserved.</p>
           <!-- </div> -->
           <!-- <div class="probootstrap-back-to-top"> -->
             <p class="probootstrap-back-to-top" style="margin: 0"><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
