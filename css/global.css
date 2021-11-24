@@ -10,6 +10,18 @@ html, body {
     padding-top: 1em;
 }
 
+.footer-logo-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.footer-logo-img {
+    width: 250px;
+}
+
 .m-copyright {
     display: flex;
     justify-content: space-between;

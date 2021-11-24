@@ -11,6 +11,14 @@
     padding-top: unset;
 }
 
+.donate-container .probootstrap-form {
+    margin-bottom: unset;
+}
+
+.probootstrap-contact-info {
+    margin-bottom: unset;
+}
+
 .scheme-amount-container {
     display: grid;
     align-items: center;
@@ -68,6 +76,52 @@
     width: 350px;
 }
 
+/* Begin: Perks Part */
+.donate-container {
+    width: 90vw;
+    margin: auto;
+}
+.donate-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+.perks-container {
+    padding: 15px;
+    border: 1px solid grey;
+}
+.perks-heading {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.perks-title {
+    font-weight: 700;
+}
+.perks-brief {
+    margin-left: 30px;
+}
+.probootstrap-contact-info .perks-note {
+    margin-bottom: unset;
+    padding: 20px;
+    border: 1px dashed goldenrod;
+}
+.probootstrap-contact-info .perks-note .perks-brief {
+    margin: unset;
+}
+/* End: Perks Part */
+
+/* Begin: Media Queries */
+@media screen and (max-width: 922px) {
+    .donate-grid {
+        grid-template-rows: fit-content;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .perks-container {
+        order: -1;
+    }
+}
 @media screen and (max-width: 426px) {
     .scheme-amount-container {
         grid-template-rows: repeat(3, 1fr);
@@ -80,3 +134,4 @@
         width: 100%;
     }
 }
+/* End: Media Queries */

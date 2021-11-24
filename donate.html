@@ -79,110 +79,127 @@
       </section>
 
       <section class="probootstrap-section">
-        <div class="container">
-          <div class="row">
-          <div class="col-md-5 probootstrap-animate">
-            <form action="/" method="post" class="probootstrap-form">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="eg. John Doe" required>
-              </div>
-              <div class="form-group">
-                <label for="contact">Contact</label>
-                <input type="tel" class="form-control" id="contact" name="contact" placeholder="eg. +123 456 7890" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="eg. contact@bharatafirst.com" required>
-              </div>
-              <!-- <div class="form-group">
-                <label for="currency">Currency</label>
-                <select class="form-control" required>
-                  <option selected class="form-select">Choose currency</option>
-                  <option value="INR">INR - Indian Rupee</option>
-                  <option value="USD">USD - US Dollar</option>
-                  <option value="GEL">GEL - Georgian Lari</option>
-                  <option value="CAD">CAD - Canadian Dollar</option>
-                </select>
-              </div> -->
-              <div class="form-group">
-                <label for="amount">Amount</label>
-                <input type="number" class="form-control" id="amount" name="amount" placeholder="&#8377; 1000.00" onfocus="myVal()" onchange="myPerks()">
-                <div class="scheme-amount-container">
-                  <div>
-                    <input class="radio-input" type="radio" name="scheme-amount" value="10000" id="scheme-amount1">
-                    <label class="radio-label" for="scheme-amount1">&#8377; 10,000</label>
+        <div class="donate-container">
+          <div class="donate-grid">
+            <div class="probootstrap-animate">
+              <form action="/" method="post" class="probootstrap-form">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="eg. John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact">Contact</label>
+                  <input type="tel" class="form-control" id="contact" name="contact" placeholder="eg. +123 456 7890" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="eg. contact@bharatafirst.com" required>
+                </div>
+                <!-- <div class="form-group">
+                  <label for="currency">Currency</label>
+                  <select class="form-control" required>
+                    <option selected class="form-select">Choose currency</option>
+                    <option value="INR">INR - Indian Rupee</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="GEL">GEL - Georgian Lari</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                  </select>
+                </div> -->
+                <div class="form-group">
+                  <label for="amount">Amount</label>
+                  <input type="number" class="form-control" id="amount" name="amount" placeholder="&#8377; 1000.00" onfocus="myVal()" onchange="myPerks()">
+                  <div class="scheme-amount-container">
+                    <div>
+                      <input class="radio-input" type="radio" name="scheme-amount" value="10000" id="scheme-amount1">
+                      <label class="radio-label" for="scheme-amount1">&#8377; 10,000</label>
+                    </div>
+                    <div>
+                      <input class="radio-input" type="radio" name="scheme-amount" value="25000" id="scheme-amount2">
+                      <label class="radio-label" for="scheme-amount2">&#8377; 25,000</label>
+                    </div>
+                    <div>
+                      <input class="radio-input" type="radio" name="scheme-amount" value="50000" id="scheme-amount3">
+                      <label class="radio-label" for="scheme-amount3">&#8377; 50,000</label>
+                    </div>
+                    <div>
+                      <input class="radio-input" type="radio" name="scheme-amount" value="100000" id="scheme-amount4">
+                      <label class="radio-label" for="scheme-amount4">&#8377; 1,00,000</label>
+                    </div>
+                    <div>
+                      <input class="radio-input" type="radio" name="scheme-amount" value="250000" id="scheme-amount5">
+                      <label class="radio-label" for="scheme-amount5">&#8377; 2,50,000</label>
+                    </div>
+                    <div>
+                      <input class="radio-input" type="radio" name="scheme-amount" value="500000" id="scheme-amount6">
+                      <label class="radio-label" for="scheme-amount6">&#8377; 5,00,000</label>
+                    </div>
                   </div>
-                  <div>
-                    <input class="radio-input" type="radio" name="scheme-amount" value="25000" id="scheme-amount2">
-                    <label class="radio-label" for="scheme-amount2">&#8377; 25,000</label>
-                  </div>
-                  <div>
-                    <input class="radio-input" type="radio" name="scheme-amount" value="50000" id="scheme-amount3">
-                    <label class="radio-label" for="scheme-amount3">&#8377; 50,000</label>
-                  </div>
-                  <div>
-                    <input class="radio-input" type="radio" name="scheme-amount" value="100000" id="scheme-amount4">
-                    <label class="radio-label" for="scheme-amount4">&#8377; 1,00,000</label>
-                  </div>
-                  <div>
-                    <input class="radio-input" type="radio" name="scheme-amount" value="250000" id="scheme-amount5">
-                    <label class="radio-label" for="scheme-amount5">&#8377; 2,50,000</label>
-                  </div>
-                  <div>
-                    <input class="radio-input" type="radio" name="scheme-amount" value="500000" id="scheme-amount6">
-                    <label class="radio-label" for="scheme-amount6">&#8377; 5,00,000</label>
+                  <div class="perk-msg">
+                    <p id="perks" style="margin: 0;">Your Perks will appear here</p>
                   </div>
                 </div>
-                <div class="perk-msg">
-                  <p id="perks" style="margin: 0;">Your Perks will appear here</p>
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <textarea cols="30" rows="4" class="form-control" id="address" name="address" placeholder="eg. 198 West 21th Street, Suite 721 New York NY 10016." required></textarea>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="address">Address</label>
-                <textarea cols="30" rows="4" class="form-control" id="address" name="address" placeholder="eg. 198 West 21th Street, Suite 721 New York NY 10016." required></textarea>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea cols="30" rows="6" class="form-control" id="message" name="message" placeholder="eg. This donation is for the children who needs food."></textarea>
-              </div>
-              <div class="form-group">
-                <input class="refund-policy-checkbox" type="checkbox" name="refund-policy" id="refund-policy-check">
-                <label class="refund-policy-label" for="refund-policy-check">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, culpa?</label>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-lg razorpay-btn" id="submit" name="submit" value="Make Payment" onclick="location.href='/BharataFirst-FrontEnd/confirm.html'">
-              </div>
-            </form>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea cols="30" rows="6" class="form-control" id="message" name="message" placeholder="eg. This donation is for the children who needs food."></textarea>
+                </div>
+                <div class="form-group">
+                  <input class="refund-policy-checkbox" type="checkbox" name="refund-policy" id="refund-policy-check">
+                  <label class="refund-policy-label" for="refund-policy-check">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, culpa?</label>
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-lg razorpay-btn" id="submit" name="submit" value="Make Payment" onclick="location.href='/BharataFirst-FrontEnd/confirm.html'">
+                </div>
+              </form>
+            </div>
+
+            <div class="perks-container probootstrap-animate">
+
+              <h3 class="perks-heading">A helping hand to restore glory of Bharatha</h3>
+              <p class="perks-descrption">We are a wholly crowd funded platform. Do contribute to our initiative and stand a chance to win premium Bharata First goodies!</p>
+              <ul class="probootstrap-contact-info">
+                <li class="perks-list">
+                  <i class="icon-gift"></i>
+                  <span class="perks-title">₹ 10,000 and above</span>
+                  <p class="perks-brief">Exclusive merchandise from Bharata First right at your doorstep!</p>
+                </li>
+                <li class="perks-list">
+                  <i class="icon-gift"></i>
+                  <span class="perks-title">Up to ₹ 25,000</span>
+                  <p class="perks-brief">Early access to all the seasons of The Great Indic Empires in high definition!</p>
+                </li>
+                <li class="perks-list">
+                  <i class="icon-gift"></i>
+                  <span class="perks-title">Up to ₹50, 000</span>
+                  <p class="perks-brief">Get your hands on the glimpses of scenic and sublime locations captured via the most professional photography packed in a handpicked album cover just for you!</p>
+                </li>
+                <li class="perks-list">
+                  <i class="icon-gift"></i>
+                  <span class="perks-title">Up to ₹ 1 Lakhs</span>
+                  <p class="perks-brief">Become proud owners of customised mementos that will display your strong bond and loyal association with our initiative.</p>
+                </li>
+                <li class="perks-list">
+                  <i class="icon-gift"></i>
+                  <span class="perks-title">Up to ₹ 2.5 lakhs</span>
+                  <p class="perks-brief">Grace our launch events as a dignitary and get early invites to all our mega events planned for the near future. <br> You will also receive a carving in stone as an honourable acknowledgement for your contribution.</p>
+                </li>
+                <li class="perks-list">
+                  <i class="icon-gift"></i>
+                  <span class="perks-title">Up to ₹ 5 lakhs</span>
+                  <p class="perks-brief">Enjoy a fully funded 2 nights 1 day stay at the place of shooting and explore the greatness of that enchanted land.</p>
+                <li class="perks-list perks-note">
+                  <i class="icon-info2"></i>
+                  <span class="perks-title">Please note:</span>
+                  <p class="perks-brief">Contributors will also be eligible for the perks that have been mentioned below their contributed amount!</p>
+                </li>
+              </ul>
+
+            </div>
+            
           </div>
-
-          <div class="col-md-6 col-md-push-1 probootstrap-animate">
-            
-            
-            <h4>USA Office</h4>
-            <ul class="probootstrap-contact-info">
-              <li><i class="icon-pin"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-              <li><i class="icon-email"></i><span>info@domain.com</span></li>
-              <li><i class="icon-phone"></i><span>+123 456 7890</span></li>
-            </ul>
-
-            <h4>Europe Office</h4>
-            <ul class="probootstrap-contact-info">
-              <li><i class="icon-pin"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-              <li><i class="icon-email"></i><span>info@domain.com</span></li>
-              <li><i class="icon-phone"></i><span>+123 456 7890</span></li>
-            </ul>
-
-            <h4>Asia Office</h4>
-            <ul class="probootstrap-contact-info">
-              <li><i class="icon-pin"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-              <li><i class="icon-email"></i><span>info@domain.com</span></li>
-              <li><i class="icon-phone"></i><span>+123 456 7890</span></li>
-            </ul>
-            
-          </div>
-          
-        </div>
         </div>
       </section>
       
@@ -194,8 +211,8 @@
               <div class="">
                 <!-- <h3>About Us</h3> -->
                 <!-- <p>Bharata First is a digital platform launched by Frank Rausan Pereira. The vision of the platform is “To Make Bharata Great Again” by informing, educating, and empowering the youth. We want to facilitate the discourse in the country around National aims & goals.</p> -->
-                <div>
-                  <img src="img/bf-logo.png" alt="" width="100%">
+                <div class="footer-logo-holder">
+                  <img class="footer-logo-img" src="img/bf-logo.png" alt="">
                 </div>
                 <ul class="probootstrap-footer-social" style="text-align: center;">
                   <li><a href="https://twitter.com/BharataFirst" target="_blank"><i class="icon-twitter"></i></a></li>
