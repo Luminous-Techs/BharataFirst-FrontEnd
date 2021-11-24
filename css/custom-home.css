@@ -38,9 +38,8 @@
 }
 
 .about-cover-photo {
-    min-width: 300px;
-    width: 100%;
-    aspect-ratio: 16 / 4;
+    height: 285px;
+    aspect-ratio: 4/1;
 }
 
 .money {
@@ -63,55 +62,18 @@
 .main-title {
     margin: unset;
     color: #000;
+    font-size: 2em;
     font-weight: 700;
 }
 
-.donation-container {
-    display: grid;
-    justify-items: center;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 50px 1fr;
-    padding: 20px 0;
-    color: #000;
-}
-
 .donation-description {
-    margin: 0;
-}
-
-.donation-container-divider {
-    display: inline-block;
-    align-self: center;
-    margin: 0;
-    padding: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #AAA;
-}
-.donation-container-left, .donation-container-right {
-    width: 100%;
-}
-.scheme-ul {
-    padding: 0;
-}
-
-.scheme-item {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.scheme-item::before {
-    content: '\f4be';
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    margin-right: 10px;
-    color: #555;
+    margin-bottom: 10px !important;
 }
 
 .btn-black {
     font-size: 1.1em;
     padding: 0.5em 2em;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 1252px) {
@@ -123,7 +85,7 @@
 @media screen and (max-width: 933px) {
     .hero-flex {
         flex-direction: column-reverse;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     .youtube-iframe {
         width: 570px;
@@ -144,17 +106,12 @@
         font-size: 30px;
         line-height: 60px;
     }
-    .donation-container {
-        grid-template-rows: fit-content;
-        grid-template-columns: 1fr;
-        row-gap: 20px;
-    }
-    .donation-container-divider {
-        width: 100%;
-        height: 2px;
-    }
     .about-cover-photo {
-        aspect-ratio: 16/9;
+        height: unset;
+        aspect-ratio: 6/3;
+    }
+    .main-title {
+        font-size: 1.5em;
     }
 }
 
@@ -166,7 +123,7 @@
         width: 100%;
     }
     .youtube-iframe {
-        width: 98%;
+        width: 100%;
     }
     .probootstrap-cause-inner {
         padding-right: 10px !important;
