@@ -72,10 +72,11 @@
     margin-left: 5px;
 }
 
-.TnC-check {
+.TnC-check, .contact-mail-link {
     color: #00F;
+    font-weight: 400;
 }
-.TnC-check:hover {
+.TnC-check:hover, .contact-mail-link:hover {
     border-bottom: 1px solid #00F;
 }
 
