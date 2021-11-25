@@ -37,6 +37,80 @@
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Begin: Indic Films Section */
+
+.indic-films-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(2, 270px);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.indic-films-item {
+    height: 100%;
+    width: 100%;
+}
+
+.indic-films-item:focus, .indic-films-item:hover {
+    position: relative;
+    top: -10px;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.indic-film {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.indic-film-title {
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.indic-film-1 {
+    background-image: url(../img/gie-episodes/chapter-01.png);
+}
+.indic-film-2 {
+    background-image: url(../img/gie-episodes/chapter-02.png);
+}
+.indic-film-3 {
+    background-image: url(../img/gie-episodes/chapter-03.png);
+}
+.indic-film-4 {
+    background-image: url(../img/gie-episodes/chapter-04.png);
+}
+.indic-film-5 {
+    background-image: url(../img/gie-episodes/chapter-05.png);
+}
+.indic-film-6 {
+    background-image: url(../img/gie-episodes/chapter-06.png);
+}
+.indic-film-7 {
+    background-image: url(../img/gie-episodes/chapter-07.png);
+}
+.indic-film-8 {
+    background-image: url(../img/gie-episodes/chapter-08.png);
+}
+.indic-film-9 {
+    background-image: url(../img/gie-episodes/chapter-09.png);
+}
+.indic-film-10 {
+    background-image: url(../img/gie-episodes/chapter-10.png);
+}
+
+/* End: Indic Films Section */
+
+
 .about-cover-photo {
     height: 285px;
     aspect-ratio: 4/1;
@@ -82,6 +156,20 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .indic-films-grid {
+        grid-template-rows: repeat(3, 270px);
+        grid-template-columns: repeat(4, 220px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .indic-films-grid {
+        grid-template-rows: repeat(4, 270px);
+        grid-template-columns: repeat(3, 220px);
+    }
+}
+
 @media screen and (max-width: 933px) {
     .hero-flex {
         flex-direction: column-reverse;
@@ -115,6 +203,13 @@
     }
 }
 
+@media screen and (max-width: 732px) {
+    .indic-films-grid {
+        grid-template-rows: repeat(5, 270px);
+        grid-template-columns: repeat(2, 220px);
+    }
+}
+
 @media screen and (max-width: 642px) {
     .probootstrap-hero .mcontainer {
         padding: 0 10px;
@@ -128,6 +223,13 @@
     .probootstrap-cause-inner {
         padding-right: 10px !important;
         padding-left: 10px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .indic-films-grid {
+        grid-template-rows: repeat(10, 270px);
+        grid-template-columns: repeat(1, 220px);
     }
 }
 

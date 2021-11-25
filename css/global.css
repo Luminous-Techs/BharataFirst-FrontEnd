@@ -1,9 +1,15 @@
 .working * {
-    border: 1px dashed #0f0;
+    border: 1px solid #000;
 }
 
 html, body {
     scroll-behavior: smooth;
+}
+
+.probootstrap-navbar .navbar-brand {
+    background-image: url(../img/bf-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .probootstrap-footer {
