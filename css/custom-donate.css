@@ -112,6 +112,7 @@
     margin-bottom: unset;
     padding: 20px;
     border: 1px dashed goldenrod;
+    border-radius: 8px;
 }
 .probootstrap-contact-info .perks-note .perks-brief {
     margin: unset;
