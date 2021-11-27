@@ -1,23 +1,34 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bharata First</title>
-    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="img/favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="img/favicon-180x180.png">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/custom-donate.css">
-    <link rel="stylesheet" href="css/global.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Support - Bharata First</title>
+        <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" href="img/favicon-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="img/favicon-180x180.png">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700,900" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/styles-merged.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/custom-donate.css">
+        <link rel="stylesheet" href="css/custom-confirm.css">
+    
+        <!--[if lt IE 9]>
+          <script src="js/vendor/html5shiv.min.js"></script>
+          <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+      </head>
 
 <body>
     <nav class="navbar navbar-default probootstrap-navbar">
@@ -88,8 +99,7 @@
                         <button class="btn btn-primary btn-lg razorpay-btn" id="rzp-button1">Donate Using Razorpay</button>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-lg bank-transfer-btn" data-toggle="modal"
-                            data-target="#bankModal">Direct Bank Transfer</button>
+                        <button class="btn btn-primary btn-lg bank-transfer-btn" data-toggle="modal" data-target="#bankModal">Direct Bank Transfer</button>
                     </div>
                     </form>
                 </div>
@@ -98,18 +108,44 @@
     </section>
 
     <!-- Bank Details Modal -->
-    <div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="bankModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Bank Details for direct Transfer</h5>
+                    <h5 class="modal-title" id="bankModalLabel">Direct Transfer</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="model-grid">
+                        <div class="model-grid-item model-grid-item-1">
+                            <div class="model-grid-item-header">
+                                <h2 style="margin-bottom: 10px;">Scan QR Code</h2>
+                                <hr style="background-color: #777; height: 2.5px; width: 100%;">
+                            </div>
+                            <div class="model-grid-item-qr-holder">
+                                <img src="img/qr_code.png" class="model-qr-code" alt="QR Code - Bharata First">
+                            </div>
+                        </div>
+                        <div class="model-grid-item model-grid-item-2">
+                            <div class="model-grid-item-header">
+                                <h2 style="margin-bottom: 10px;">Bank Details</h2>
+                                <hr style="background-color: #777; height: 2.5px; width: 100%;">
+                            </div>
+                            <div style="padding-top: 10px;">
+                                <p><b>Bank</b> : IndusInd Bank</p>
+                                <p><b>Branch</b> : Sector 110 Noida</p>
+                                <p><b>A/C Holder</b> : Bharata First Academy (OPC) Private Limited</p>
+                                <p><b>A/C No.</b> : 259999744904</p>
+                                <p><b>IFSC Code</b> : INDB00000533</p>
+                            </div>
+                        </div>
+                        <div class="model-grid-item model-grid-item-3">
+                            <p style="color: #000; margin-bottom: unset;"><b>Note:</b> Please do send us the invoice of your transaction on our Email ID: <a href="mailto:contact@gie.bharatafirst.com" class="contact-mail-link">contact@gie.bharatafirst.com</a>, in order to process the perks and get a contribution receipt.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -120,38 +156,56 @@
 
     <footer class="probootstrap-footer probootstrap-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 probootstrap-animate">
-                    <div class="">
-                        <div>
-                            <img src="img/bf-logo.png" alt="" width="100%">
-                        </div>
-                        <ul class="probootstrap-footer-social" style="text-align: center;">
-                            <li><a href="https://twitter.com/BharataFirst" target="_blank"><i
-                                        class="icon-twitter"></i></a></li>
-                            <li><a href="https://www.facebook.com/bharatafirst" target="_blank"><i
-                                        class="icon-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/bharatafirst" target="_blank"><i
-                                        class="icon-instagram2"></i></a></li>
-                            <li><a href="https://in.linkedin.com/company/bharata-first" target="_blank"><i
-                                        class="icon-linkedin"></i></a></li>
-                            <li><a href="https://www.youtube.com/c/BharataFirst" target="_blank"><i
-                                        class="icon-youtube"></i></a></li>
-                        </ul>
-                    </div>
+          <div class="row">
+            <div class="col-md-12 probootstrap-animate">
+              <div class="">
+                <!-- <h3>About Us</h3> -->
+                <!-- <p>Bharata First is a digital platform launched by Frank Rausan Pereira. The vision of the platform is “To Make Bharata Great Again” by informing, educating, and empowering the youth. We want to facilitate the discourse in the country around National aims & goals.</p> -->
+                <div class="footer-logo-holder">
+                  <img class="footer-logo-img" src="img/bf-logo.png" alt="">
                 </div>
+                <ul class="probootstrap-footer-social" style="text-align: center;">
+                  <li><a href="https://twitter.com/BharataFirst" target="_blank"><i class="icon-twitter"></i></a></li>
+                  <li><a href="https://www.facebook.com/bharatafirst" target="_blank"><i class="icon-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/bharatafirst" target="_blank"><i class="icon-instagram2"></i></a></li>
+                  <li><a href="https://in.linkedin.com/company/bharata-first" target="_blank"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="https://www.youtube.com/c/BharataFirst" target="_blank"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
             </div>
-            <!-- END row -->
+           
+            <!-- <div class="col-md-4 probootstrap-animate">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
+                  <li><i class="icon-mail"></i><span>contact@bharatafirst.com</span></li>
+                  <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+                </ul>
+                
+              </div>
+            </div>
+
+            <div class="col-md-4 probootstrap-animate">
+              <div class="probootstrap-footer-widget">
+                <h3>Donation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis nam obcaecati placeat. Repellendus omnis in praesentium molestiae rem eligendi.</p>
+                <p><a href="donate.html" class="btn btn-primary">Donate Now</a></p>
+              </div>
+            </div> -->
+           
+          </div>
+          <!-- END row -->
+          
         </div>
 
         <div class="m-copyright">
-            <!-- <div class="text-left"> -->
+          <!-- <div class="text-left"> -->
             <p style="margin: 0">&copy; 2021 <a href="index.html">Bharata First</a>. &nbsp;All Rights Reserved.</p>
-            <!-- </div> -->
-            <!-- <div class="probootstrap-back-to-top"> -->
-            <p class="probootstrap-back-to-top" style="margin: 0"><a href="#" class="js-backtotop">Back to top <i
-                        class="icon-arrow-long-up"></i></a></p>
-            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="probootstrap-back-to-top"> -->
+            <p class="probootstrap-back-to-top" style="margin: 0"><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+          <!-- </div> -->
         </div>
     </footer>
 
@@ -195,7 +249,7 @@
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/custom-donate.js"></script>
-
+    
 </body>
 
 </html>

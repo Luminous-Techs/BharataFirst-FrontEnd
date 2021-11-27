@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bharata First</title>
+    <title>Support - Bharata First</title>
     <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="img/favicon-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="img/favicon-180x180.png">
@@ -89,15 +89,15 @@
             <div class="probootstrap-animate">
               <form action="/" method="post" class="probootstrap-form">
                 <div class="form-group">
-                  <label for="name">Full Name</label>
+                  <label for="name">Full Name <span class="required-field">*</span></label>
                   <input type="text" class="form-control" id="name" name="name" placeholder="eg. John Doe" required>
                 </div>
                 <div class="form-group">
-                  <label for="contact">Contact</label>
+                  <label for="contact">Contact <span class="required-field">*</span></label>
                   <input type="tel" class="form-control" id="contact" name="contact" placeholder="eg. +123 456 7890" required>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email</label>
+                  <label for="email">Email <span class="required-field">*</span></label>
                   <input type="email" class="form-control" id="email" name="email" placeholder="eg. contact@bharatafirst.com" required>
                 </div>
                 <!-- <div class="form-group">
@@ -111,8 +111,8 @@
                   </select>
                 </div> -->
                 <div class="form-group">
-                  <label for="amount">Amount</label>
-                  <input type="number" class="form-control" id="amount" name="amount" placeholder="&#8377; 1000.00" onfocus="myVal()" onchange="myPerks()">
+                  <label for="amount">Amount <span class="required-field">*</span></label>
+                  <input type="number" class="form-control" id="amount" name="amount" placeholder="&#8377; 1000.00" min="1" max="500000" onfocus="myVal()" onchange="myPerks()" required>
                   <div class="scheme-amount-container">
                     <div>
                       <input class="radio-input" type="radio" name="scheme-amount" value="10000" id="scheme-amount1">
@@ -145,11 +145,11 @@
                 </div>
                 <div class="form-group">
                   <label for="address">Address</label>
-                  <textarea cols="30" rows="4" class="form-control" id="address" name="address" placeholder="eg. 198 West 21th Street, Suite 721 New York NY 10016." required></textarea>
+                  <textarea cols="30" rows="4" class="form-control" id="address" name="address" placeholder="eg. 307, Krishna Residency, Vav, Kamrej, Surat, Gujarat, Pin:394326" required></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea cols="30" rows="6" class="form-control" id="message" name="message" placeholder="eg. This donation is for the children who needs food."></textarea>
+                  <label for="message">Message <small style="font-weight: 300;">(optional)</small></label>
+                  <textarea cols="30" rows="6" class="form-control" id="message" name="message" placeholder="eg. Thank you for such a great initiative. I extend my support in all way. I would like to contribute in whatever way is possible.... Best wishes!"></textarea>
                 </div>
                 <div class="form-group">
                   <input class="refund-policy-checkbox" type="checkbox" name="refund-policy" id="refund-policy-check" required>

@@ -150,6 +150,110 @@
     margin-top: 10px;
 }
 
+/* Begin: Perks Part */
+.perks-section {
+    padding-top: unset;
+}
+.perks-container {
+    padding: 15px;
+    border: 1px solid grey;
+}
+.perks-title {
+    font-weight: 700;
+}
+.perks-brief {
+    margin-left: 30px;
+}
+.probootstrap-contact-info .perks-note {
+    margin-bottom: unset;
+    padding: 20px;
+    border: 1px dashed goldenrod;
+    border-radius: 8px;
+}
+.probootstrap-contact-info .perks-note .perks-brief {
+    margin: unset;
+}
+/* End: Perks Part */
+
+/* Begin: Updates Part */
+
+.updates-section {
+    color: #000;
+}
+.update-icon {
+    margin-right: 10px;
+}
+
+/* End: Updates Part */
+
+/* Begin: Newsletter Part */
+
+.newsletter-section {
+    padding-top: unset;
+}
+.newsletter-wrapper {
+    width: 70%;
+    /* min-width: 500px; */
+    max-width: 800px;
+    margin: auto;
+    background-image: linear-gradient(120deg, rgb(209, 219, 233), rgb(240, 250, 243));
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.newsletter-wrapper .box {
+    box-shadow: 0px 0px 5px 0 #AAA;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: .25rem;
+    text-align: center;
+}
+.newsletter-wrapper h1 {
+    color: #FDBE34;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.newsletter-wrapper p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.newsletter-wrapper input {
+    border: 1px solid rgb(220, 219, 235);
+    border-radius: 4px;
+    padding: 10px;
+    color: #000;
+    transition: all .15s ease-in;
+}
+.newsletter-wrapper input[type=email] {
+    width: 60%;
+}
+.newsletter-wrapper input[type=submit] {
+    background-color: #FDBE34;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.newsletter-wrapper input[type=submit]::focus {
+    border: 1px solid #fff;
+}
+.newsletter-wrapper input:focus {
+    border-color: #FDBE34;
+    box-shadow: 0px 0px 8px 2px #FDBE34;
+    outline: none;
+}
+.newsletter-wrapper input::placeholder {
+    color: #999;
+}
+.newsletter-wrapper #subscribe-result p {
+    margin-top: 35px;
+}
+
+/* End: Newsletter Part */
+
 @media screen and (max-width: 1252px) {
     .probootstrap-hero .mcontainer {
         padding: 0 2em;
@@ -167,6 +271,9 @@
     .indic-films-grid {
         grid-template-rows: repeat(4, 270px);
         grid-template-columns: repeat(3, 220px);
+    }
+    .newsletter-wrapper {
+        width: unset;
     }
 }
 
@@ -200,6 +307,9 @@
     }
     .main-title {
         font-size: 1.5em;
+    }
+    .update-news-para {
+        text-align: justify;
     }
 }
 
@@ -241,5 +351,8 @@
     .probootstrap-hero .probootstrap-slider-text h1 span {
         font-size: 30px;
         line-height: 40px;
+    }
+    .newsletter-wrapper .box {
+        padding: 15px 0px;
     }
 }

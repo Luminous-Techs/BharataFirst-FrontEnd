@@ -3,6 +3,7 @@ let perksMsg = document.getElementById('perks');
 var schemeAmount = document.querySelectorAll('input[type=radio][name="scheme-amount"]');
 schemeAmount.forEach(radioBtn => radioBtn.addEventListener('change', () => {
     amountInput.value = radioBtn.value;
+    perksMsg.style.color = "Green";
     myPerks();
 }));
 

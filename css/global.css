@@ -1,5 +1,5 @@
 .working * {
-    border: 1px solid #000;
+    border: 1px dashed #000;
 }
 
 html, body {
@@ -10,6 +10,12 @@ html, body {
     background-image: url(../img/bf-logo.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.required-field {
+    vertical-align: sub;
+    color: #F00;
+    font-size: 20px;
 }
 
 .probootstrap-footer {
