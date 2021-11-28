@@ -112,7 +112,7 @@
 .probootstrap-contact-info .perks-note {
     margin-bottom: unset;
     padding: 20px;
-    border: 1px dashed goldenrod;
+    border: 1px dashed #FDBE34;
     border-radius: 8px;
 }
 .probootstrap-contact-info .perks-note .perks-brief {
