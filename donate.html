@@ -89,7 +89,7 @@
         <div class="donate-container">
           <div class="donate-grid">
             <div class="probootstrap-animate">
-              <form action="/" method="post" class="probootstrap-form">
+              <form action="confirm.html" class="probootstrap-form">
                 <div class="form-group">
                   <label for="name">Full Name <span class="required-field">*</span></label>
                   <input type="text" class="form-control" id="name" name="name" placeholder="eg. John Doe" required>
@@ -161,7 +161,7 @@
                   <label class="refund-policy-label" for="refund-policy-check">I agree to all the <a class="TnC-check" href="#" data-toggle="modal" data-target="#tncModal">Terms & Conditions</a>.</label>
                 </div>
                 <div class="form-group">
-                  <input type="submit" class="btn btn-primary btn-lg razorpay-btn" id="submit" name="submit" value="Make Payment" onclick="location.href='/BharataFirst-FrontEnd/confirm.html'">
+                  <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Make Payment">
                 </div>
               </form>
             </div>
@@ -272,36 +272,62 @@
       <!-- Bank Details Modal -->
       <div class="modal fade" id="tncModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="tncModalLabel">Terms & Conditions</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    Please note that goodies will be distributed after the completion of the shoot. Our team will contact you in either case.
-                    You can track project progress from the website or subscribe to the newsletter for updates.
-                  </p>
-                  
-                  <p><b>Terms & Conditions:</b></p>
-                  <ol>
-                    <li>The donation amount is non-refundable under any circumstances.</li>
-                    <li>Your personal payment-related is protected. We would not disclose this information to anyone unless required by law.</li>
-                    <li>Funds are used in accordance with our organizational goals.</li>
-                    <li>For any further assistance mail us at <a href="mailto:contact@gie.bharatafirst.com" class="contact-mail-link">contact@gie.bharatafirst.com</a></li>
-                  </ol>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="tncModalLabel">Terms & Conditions</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+              <p>
+                Please note that goodies will be distributed after the completion of the shoot. Our team will contact you in either case.
+                You can track project progress from the website or subscribe to the newsletter for updates.
+              </p>
+              
+              <p><b>Terms & Conditions:</b></p>
+              <ol>
+                <li>The donation amount is non-refundable under any circumstances.</li>
+                <li>Your personal payment-related is protected. We would not disclose this information to anyone unless required by law.</li>
+                <li>Funds are used in accordance with our organizational goals.</li>
+                <li>For any further assistance mail us at <a href="mailto:contact@gie.bharatafirst.com" class="contact-mail-link">contact@gie.bharatafirst.com</a></li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     
     <!-- Mobile Number Plugin JS -->
     <script src="intl-tel-input/build/js/intlTelInput.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        // autoPlaceholder: "off",
+        // dropdownContainer: document.body,
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        geoIpLookup: function(callback) {
+          $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            callback(countryCode);
+          });
+        },
+        // hiddenInput: "full_number",
+        // initialCountry: "auto",
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        preferredCountries: ['in'],
+        // separateDialCode: true,
+        utilsScript: "intl-tel-input/build/js/utils.js",
+      });
+    </script>
 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
