@@ -23,15 +23,14 @@
 
 .hero-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    
 }
 
 .youtube-iframe {
-    width: 50vw;
+    width: 850px;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
@@ -143,6 +142,9 @@
 .donation-description {
     margin-bottom: 10px !important;
 }
+.donation-description:first-of-type {
+    margin-top: 15px;
+}
 
 .btn-black {
     font-size: 1.1em;
@@ -175,6 +177,20 @@
 }
 /* End: Perks Part */
 
+/* Begin: Contributers Part */
+.probootstrap-donors {
+    padding: 10px;
+}
+.donator-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.donated .money {
+    font-size: 2em !important;
+}
+/* End: Contributers Part */
+
 /* Begin: Updates Part */
 
 .updates-section {
@@ -182,6 +198,9 @@
 }
 .update-icon {
     margin-right: 10px;
+}
+.update-news-para {
+    font-size: 1.2em;
 }
 
 /* End: Updates Part */
@@ -242,7 +261,7 @@
 }
 .newsletter-wrapper input:focus {
     border-color: #FDBE34;
-    box-shadow: 0px 0px 8px 2px #FDBE34;
+    box-shadow: 0px 0px 1px 1px #FDBE34;
     outline: none;
 }
 .newsletter-wrapper input::placeholder {
@@ -278,16 +297,16 @@
 }
 
 @media screen and (max-width: 933px) {
-    .hero-flex {
+    /* .hero-flex {
         flex-direction: column-reverse;
         justify-content: space-evenly;
-    }
+    } */
     .youtube-iframe {
-        width: 570px;
+        width: 90vw;
     }
     .hero-intro {
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
         margin-top: 1em;
     }
 }
