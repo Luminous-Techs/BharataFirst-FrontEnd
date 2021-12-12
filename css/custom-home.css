@@ -5,20 +5,31 @@
 .probootstrap-hero {
     display: grid;
     place-items: center;
-    height: 100vh !important;
+    height: 100vh;
     padding-top: 88px;
     background-color: #6c6c6c;
     background: linear-gradient(#4c4c4c, #6c6c6c);
 }
 
 .probootstrap-hero .mcontainer {
-    height: 80vh;
+    height: 100%;
     width: 100%;
     padding: 0 4em;
+    /* background-image: url(/img/hero-bg.mp4); */
+    background-position: center;
+    background-size: cover;
 }
 
 .probootstrap-hero .probootstrap-slider-text {
     padding-top: unset;
+}
+
+@media screen and (max-width: 768px) {
+    .probootstrap-hero {
+        height: unset;
+        padding-top: 83px;
+        grid-template-rows: 65vh;
+    }
 }
 
 .hero-flex {

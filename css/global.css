@@ -6,6 +6,32 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* Begin: Navbar */
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-support-btn {
+    display: none;
+}
+.navbar-toggle {
+    position: unset;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .header-support-btn {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: 2%;
+    }
+    .navbar-toggle {
+        margin-right: 2%;
+    }
+}
+/* End: Navbar */
+
 .probootstrap-navbar .navbar-brand {
     background-image: url(../img/bf-logo.png);
     background-size: contain;
