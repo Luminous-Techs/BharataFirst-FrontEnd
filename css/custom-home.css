@@ -60,9 +60,22 @@
     aspect-ratio: 16 / 9;
     border-radius: 10px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+    border: unset;
 }
 
 /* Begin: Indic Films Section */
+
+.indic-films-section {
+    font-size: 1.1em;
+}
+
+.indic-films-section-title {
+    margin-bottom: 30px !important;
+}
+
+.indic-films-tagline {
+    font-weight: 700;
+}
 
 .indic-films-grid {
     display: grid;
@@ -131,6 +144,12 @@
 }
 .indic-film-10 {
     background-image: url(../img/gie-episodes/chapter-10.png);
+}
+
+@media screen and (max-width: 425px) {
+    .indic-films-section-description {
+        text-align: justify;
+    }
 }
 
 /* End: Indic Films Section */
