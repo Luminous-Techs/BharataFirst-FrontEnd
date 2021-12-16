@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,9 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Support - Bharata First</title>
-    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="img/favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="img/favicon-180x180.png">
+    <link rel="shortcut icon" href="{% static 'img/favicon-192x192.png' %}" type="image/x-icon">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
@@ -17,13 +16,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/custom-donate.css">
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom-donate.css' %}">
     <!-- Mobile Number Plugin CSS -->
-    <link rel="stylesheet" href="intl-tel-input/build/css/intlTelInput.css">
-
+    <link rel="stylesheet" href="{% static 'intl-tel-input/build/css/intlTelInput.css' %}">
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -32,56 +30,56 @@
   <body>
 
     
-      <nav class="navbar navbar-default probootstrap-navbar">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html" title="Bharata First">Bharata First</a>
-            <a href="donate.html" class="btn btn-primary header-support-btn">Support</a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-
-          <div id="navbar-collapse" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html">Home</a></li>
-              <!-- <li><a href="about.html">About Us</a></li> -->
-              <!-- <li><a href="news.html">News</a></li> -->
-              <!-- <li><a href="causes.html">Causes</a></li> -->
-              <!-- <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
-                <ul class="dropdown-menu">
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="testimonial.html">Testimonial</a></li>
-                  <li><a href="cause-single.html">Cause Single</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li class="dropdown-submenu dropdown">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Second Level Menu</a></li>
-                      <li><a href="#">Second Level Menu</a></li>
-                      <li><a href="#">Second Level Menu</a></li>
-                      <li><a href="#">Second Level Menu</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="news.html">News</a></li>
-                  <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-              </li> -->
-              
-              <li class="probootstra-cta-button last"><a href="donate.html" class="btn btn-primary">Support</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/" title="Bharata First">Bharata First</a>
+          <a href="/donate" class="btn btn-primary header-support-btn">Support</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-      </nav>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <!-- <li><a href="news.html">News</a></li> -->
+            <!-- <li><a href="causes.html">Causes</a></li> -->
+            <!-- <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="cause-single.html">Cause Single</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown-submenu dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+              </ul>
+            </li> -->
+            
+            <li class="probootstra-cta-button last"><a href="/donate" class="btn btn-primary">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
       
       <section class="probootstrap-hero">
         <div class="container" style="display: grid; place-items: center;">
           <div class="probootstrap-slider-text probootstrap-animate" data-animate-effect="fadeIn">
-            <h1 class="probootstrap-heading probootstrap-animate">Donate <span>Together we can make a difference</span></h1>
+            <h1 class="probootstrap-heading probootstrap-animate">Support Us <span>Together we can make a difference</span></h1>
           </div>
         </div>
       </section>
@@ -90,7 +88,8 @@
         <div class="donate-container">
           <div class="donate-grid">
             <div class="probootstrap-animate">
-              <form action="confirm.html" class="probootstrap-form">
+              <form action="/donate/" method="post" class="probootstrap-form">
+                {% csrf_token %}
                 <div class="form-group">
                   <label for="name">Full Name <span class="required-field">*</span></label>
                   <input type="text" class="form-control" id="name" name="name" placeholder="eg. Hardik Makwana" required>
@@ -99,8 +98,6 @@
                   <label for="phone">Contact <span class="required-field">*</span></label><br>
                   <!-- <input type="tel" class="form-control" id="contact" name="contact" placeholder="eg. +123 456 7890" required> -->
                   <input type="tel" class="form-control" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
                 </div>
                 <div class="form-group">
                   <label for="email">Email <span class="required-field">*</span></label>
@@ -223,7 +220,7 @@
                 <!-- <h3>About Us</h3> -->
                 <!-- <p>Bharata First is a digital platform launched by Frank Rausan Pereira. The vision of the platform is “To Make Bharata Great Again” by informing, educating, and empowering the youth. We want to facilitate the discourse in the country around National aims & goals.</p> -->
                 <div class="footer-logo-holder">
-                  <img class="footer-logo-img" src="img/bf-logo.png" alt="">
+                  <img class="footer-logo-img" src="{% static 'img/bf-logo.png' %}" alt="">
                 </div>
                 <ul class="probootstrap-footer-social" style="text-align: center;">
                   <li><a href="https://twitter.com/BharataFirst" target="_blank"><i class="icon-twitter"></i></a></li>
@@ -262,7 +259,7 @@
 
         <div class="m-copyright">
           <!-- <div class="text-left"> -->
-            <p style="margin: 0">&copy; 2021 <a href="index.html">Bharata First</a>. &nbsp;All Rights Reserved.</p>
+            <p style="margin: 0">&copy; 2021 <a href="/">Bharata First</a>. &nbsp;All Rights Reserved.</p>
           <!-- </div> -->
           <!-- <div class="probootstrap-back-to-top"> -->
             <p class="probootstrap-back-to-top" style="margin: 0"><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
@@ -285,7 +282,7 @@
                 Please note that goodies will be distributed after the completion of the shoot. Our team will contact you in either case.
                 You can track project progress from the website or subscribe to the newsletter for updates.
               </p>
-              
+
               <p><b>Terms & Conditions:</b></p>
               <ol>
                 <li>The donation amount is non-refundable under any circumstances.</li>
@@ -300,9 +297,9 @@
           </div>
         </div>
       </div>
-    
+
     <!-- Mobile Number Plugin JS -->
-    <script src="intl-tel-input/build/js/intlTelInput.js"></script>
+    <script src="{% static 'intl-tel-input/build/js/intlTelInput.js' %}"></script>
     <script>
       var input = document.querySelector("#phone");
       window.intlTelInput(input, {
@@ -326,14 +323,14 @@
         // placeholderNumberType: "MOBILE",
         preferredCountries: ['in'],
         // separateDialCode: true,
-        utilsScript: "intl-tel-input/build/js/utils.js",
+        utilsScript: "{% static 'intl-tel-input/build/js/utils.js' %}",
       });
     </script>
 
-    <script src="js/scripts.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/custom-donate.js"></script>
+    <script src="{% static 'js/scripts.min.js' %}"></script>
+    <script src="{% static 'js/main.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/custom-donate.js' %}"></script>
 
   </body>
 </html>

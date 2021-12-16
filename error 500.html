@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server Error</title>
-    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="img/favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="img/favicon-180x180.png">
+    <link rel="icon" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" href="{% static 'img/favicon-192x192.png' %}" sizes="192x192">
+    <link rel="apple-touch-icon" href="{% static 'img/favicon-180x180.png' %}">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/custom-donate.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom-donate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
 </head>
 <style>
     *{
@@ -57,9 +58,12 @@
     <div id="main">
     	<div class="fof">
         		<h1>Error 500</h1>
-                <h2>Server Error please contact us at contact@gie.bharatafirst.com</h2>
+                <h2>Server Error please contact us at <span style="color: rgb(35, 175, 240);">contact@gie.bharatafirst.com<span></h2>
                 <button class="btn btn-primary btn-lg bank-transfer-btn" onclick="location.href='/'" style="max-width: 300px;">Back To Home</button>
     	</div>
     </div>
 </body>
+{% for m in messages %}
+    <script>alert("{{m}}")</script>
+{% endfor %}
 </html>
